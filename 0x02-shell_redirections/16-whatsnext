@@ -1,0 +1,2 @@
+ls /etc/passwd | grep root | wc -l
+

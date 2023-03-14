@@ -1,0 +1,2 @@
+ls tail -n10 /etc/passwd
+
