@@ -1,1 +1,1 @@
-ls /etc/passwd file
+less /etc/passwd
