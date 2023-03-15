@@ -1,2 +1,2 @@
-ls -laR | wc -l
-
+#!/bin/bash
+find . -empty -printf "%f\n"
