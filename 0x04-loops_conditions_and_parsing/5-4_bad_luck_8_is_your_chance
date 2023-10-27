@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+#The script below is displays bad luck for the 4th loop iteration displays good luck for the 8th loop iteration displays Best School for the other iterations
+index=1
+
+while [ $index -le 10 ]; do
+	if [ $index -eq 4 ]; then
+		echo "Bad Luck"
+	elif [ $index -eq 8 ]; then
+		echo "Good Luck"
+	else
+		echo "Best School"
+	fi
+	((index++))
+done

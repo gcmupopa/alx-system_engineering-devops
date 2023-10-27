@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#The script below is display Best School ten times.
+index=0
+
+until [ $index -ge 10 ]; do
+	echo "Best School"
+	((index++))
+done

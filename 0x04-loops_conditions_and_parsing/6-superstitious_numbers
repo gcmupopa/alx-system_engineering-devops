@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+#The script below is displays bad luck for the 4th loop iteration displays good luck for the 8th loop iteration displays Best School for the other iterations
+index=1
+
+while [ $index -le 20 ]; do
+	case $index in 
+		4)
+			echo -e "$index\nbad luck from China"
+			;;
+		9)
+			echo -e "$index\nbad luck from Japan"
+			;;
+		17)
+			echo -e "$index\nbad luck from Italy"
+			;;
+		*)
+			echo $index
+			;;
+		esac
+		((index++))
+done

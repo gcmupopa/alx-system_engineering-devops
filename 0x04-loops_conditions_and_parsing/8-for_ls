@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#The script below is display files
+
+for file in *; do
+	if [ -f "$file" ] && [[ "$file" != .* ]] && [[ "$file" == *-* ]]; then
+		fln="${file#*-}"
+		echo "$fln"
+	fi
+done
+
