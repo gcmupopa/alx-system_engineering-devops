@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#The script below is displaying lets parse apache logs
+logf="/path/to

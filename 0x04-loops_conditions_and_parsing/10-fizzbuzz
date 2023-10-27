@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#The script below is displaying fizzbuzz
+
+for ((index=1; index<=100; index++))
+do
+	if ((index % 3 == 0)) && ((index % 5 == 0)); then
+		echo "FizzBuzz"
+	elif ((index % 3 == 0)); then
+		echo "Fizz"
+	elif ((index % 5 == 0)); then
+		echo "Buzz"
+	else
+		echo "$index"
+	fi
+done
