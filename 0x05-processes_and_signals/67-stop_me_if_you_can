@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+pd=$(pgrep -f "7-highlander")
+if [[ -n $pd ]]; then
+	kill $pd
+fi

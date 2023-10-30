@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+pdfil="/var/run/myscript.pid"
+
+echo $$ > "pdfil"
+
+hans() {
+	echo "I hate the kill command"
+}
+
+hansi() {
+	echo "Y U no love me?!"
+}
+
+hansq() {
+	rm "$pdfil"
+	exit 0
+}
+
+trap hans SIGTERM
+trap hansi SIGINT
+trap hansq SIGQUIT SIGTERM
+
+while true; do
+	echo "To infinity and beyond"
+	sleep 2
+done

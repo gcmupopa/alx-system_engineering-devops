@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+prov=$(ps axo user,pid,%cpu,%mem,vsz,rss,tty,stat,start,time,command --forest | awk '/bash/ && !/awk/')
+
+echo "$prov"

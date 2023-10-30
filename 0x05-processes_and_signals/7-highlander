@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+fxsg() {
+	echo "I am invincible!!!"
+}
+
+trap fxsg SIGTERM
+
+while true; do
+	echo "To infinity and beyond"
+	sleep 2
+done
