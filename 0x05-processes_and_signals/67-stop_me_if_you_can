@@ -2,5 +2,5 @@
 
 pd=$(pgrep -f "7-highlander")
 if [[ -n $pd ]]; then
-	kill $pd
+	kill "$pd"
 fi

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+#This script indefinitely writes i am alive
 case "$1" in
 	start)
 		if [ -f /var/run/my_process.pid ]; then
@@ -23,7 +23,7 @@ case "$1" in
 		pd=$(cat /var/run/my_process.pid)
 		rm /var/run/my_process.pid
 		echo "manage_my_process stopped"
-		kill $pd
+		kill "$pd"
 		;;
 	restart)
 		$0 stop

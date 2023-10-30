@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+#script that:Creates the file /var/run/myscript.pid containing its PID
 pdfil="/var/run/myscript.pid"
 
 echo $$ > "pdfil"

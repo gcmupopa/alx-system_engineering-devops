@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+#This script that displays lines containing the bash word
 prov=$(ps axo user,pid,%cpu,%mem,vsz,rss,tty,stat,start,time,command --forest | awk '/bash/ && !/awk/')
 
 echo "$prov"
