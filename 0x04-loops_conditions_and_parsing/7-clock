@@ -3,12 +3,12 @@
 hour=0
 min=1
 
-while [ $hour -lt 13 ]; do
+while [ $hour -le 13 ]; do
 	printf "Hour: %d\n" $hour
 	while [ $min -lt 60 ]; do
 		echo $min
 		((min++))
 	done
 	((hour++))
-	min=0
+	min=1
 done

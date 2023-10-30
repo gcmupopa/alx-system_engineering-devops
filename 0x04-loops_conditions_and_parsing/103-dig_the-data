@@ -3,4 +3,4 @@
 
 log_fl="apache-access.log"
 
-awk '{print $1, $9}' "$log_fl"
+awk '{counter[$1" "$9]++} END {for (key in counter) print counter[key], key}' "$log_fl" | sort -rn 

@@ -4,9 +4,9 @@ index=1
 
 while [ $index -le 10 ]; do
 	if [ $index -eq 4 ]; then
-		echo "Bad Luck"
+		echo "bad Luck"
 	elif [ $index -eq 8 ]; then
-		echo "Good Luck"
+		echo "good Luck"
 	else
 		echo "Best School"
 	fi

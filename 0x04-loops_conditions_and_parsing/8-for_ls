@@ -2,7 +2,7 @@
 #The script below is display files
 
 for file in *; do
-	if [ -f "$file" ] && [[ "$file" != .* ]] && [[ "$file" == *-* ]]; then
+	if [ -f "$file" ] && [[ "$file" != .* ]]; then
 		fln="${file#*-}"
 		echo "$fln"
 	fi

@@ -2,7 +2,7 @@
 #The script below is display Best School nine times, then hi and new line.
 index=1
 
-while [ $index -lt 10 ]; do
+while [ $index -le 10 ]; do
 	if [ $index -eq 9 ]; then
 		echo -e "Best School\nHi"
 	else
